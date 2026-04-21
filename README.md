@@ -10,7 +10,7 @@ A PowerShell module that audits secrets accidentally stored in Microsoft 365 usi
 
 Microsoft Purview continuously scans your Microsoft 365 tenant — SharePoint Online, OneDrive for Business, Exchange Online, and Teams — and stamps every file with any Sensitive Information Type (SIT) pattern that matches its content. A SIT is essentially a regex-based classifier: Purview ships with over 300 built-in types covering credentials, identifiers, financial data, health information, and more.
 
-Purview deliberately errs on the side of recall. Its built-in SITs are intentionally broad so that a genuine secret is never missed. The trade-off is that patterns broad enough to catch every AWS access key or GitHub token will also match strings that *look like* secrets but aren't — sequential numbers, GUIDs in application logs, version strings, auto-generated identifiers, and so on. Every match at every confidence level is recorded in Content Explorer regardless of how noisy it is.
+Purview deliberately errors on the side of recall. Its built-in SITs are intentionally broad so that a genuine secret is never missed. The trade-off is that patterns broad enough to catch every AWS access key or GitHub token will also match strings that *look like* secrets but aren't — sequential numbers, GUIDs in application logs, version strings, auto-generated identifiers, and so on. Every match at every confidence level is recorded in Content Explorer regardless of how noisy it is.
 
 This is by design: Purview's job is classification at scale. It surfaces everything so that downstream tools — DLP policies, Information Protection labels, and scripts like this one — can act on the subset that matters.
 

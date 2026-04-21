@@ -137,38 +137,63 @@ GitHub, AWS, Google, Slack, and generic credential patterns.
 Override by passing your
 own array.
 Use 'All credentials' as a single umbrella tag, or list individual types such as:
-  # Microsoft / Azure
-  'Azure DevOps personal access token', 'Azure DevOps app secret',
-  'Azure storage account key', 'Azure storage account access key',
-  'Azure Storage account key (generic)',
-  'Azure Storage account shared access signature',
-  'Azure Storage account shared access signature for high risk resources',
-  'Azure SAS', 'Azure service bus connection string',
-  'Azure service bus shared access signature',
-  'Azure Cosmos DB account access key', 'Azure DocumentDB auth key',
-  'Azure Redis cache connection string', 'Azure Redis cache connection string password',
-  'Azure SQL connection string',
-  'Azure IAAS database connection string and Azure SQL connection string',
-  'Azure IoT connection string', 'Azure IoT shared access key',
-  'Azure Function Master / API key', 'Azure Cognitive Search API key',
-  'Azure Cognitive Service key', 'Azure Container Registry access key',
-  'Azure Databricks personal access token', 'Azure EventGrid access key',
-  'Azure Logic app shared access signature', 'Azure Machine Learning web service API key',
-  'Azure Maps subscription key', 'Azure Batch shared access key',
-  'Azure Bot Framework secret key', 'Azure Bot service app secret',
-  'Azure Shared Access key / Web Hook token', 'Azure SignalR access key',
-  'Azure App Service deployment password', 'Azure publish setting password',
-  'Azure subscription management certificate',
-  'Microsoft Entra client access token', 'Microsoft Entra client secret',
-  'Microsoft Entra user Credentials', 'Microsoft Bing maps key',
-  'ASP.NET machine Key',
-  # Third-party
-  'GitHub Personal Access Token', 'Amazon S3 Client Secret Access Key',
-  'Google API key', 'Slack access token',
-  # Generic / cross-platform
-  'General password', 'General Symmetric key', 'Client secret / API key',
-  'User login credentials', 'Http authorization header',
-  'SQL Server connection string', 'X.509 certificate private key'
+
+**Microsoft / Azure**
+- Azure DevOps personal access token
+- Azure DevOps app secret
+- Azure storage account key
+- Azure storage account access key
+- Azure Storage account key (generic)
+- Azure Storage account shared access signature
+- Azure Storage account shared access signature for high risk resources
+- Azure SAS
+- Azure service bus connection string
+- Azure service bus shared access signature
+- Azure Cosmos DB account access key
+- Azure DocumentDB auth key
+- Azure Redis cache connection string
+- Azure Redis cache connection string password
+- Azure SQL connection string
+- Azure IAAS database connection string and Azure SQL connection string
+- Azure IoT connection string
+- Azure IoT shared access key
+- Azure Function Master / API key
+- Azure Cognitive Search API key
+- Azure Cognitive Service key
+- Azure Container Registry access key
+- Azure Databricks personal access token
+- Azure EventGrid access key
+- Azure Logic app shared access signature
+- Azure Machine Learning web service API key
+- Azure Maps subscription key
+- Azure Batch shared access key
+- Azure Bot Framework secret key
+- Azure Bot service app secret
+- Azure Shared Access key / Web Hook token
+- Azure SignalR access key
+- Azure App Service deployment password
+- Azure publish setting password
+- Azure subscription management certificate
+- Microsoft Entra client access token
+- Microsoft Entra client secret
+- Microsoft Entra user Credentials
+- Microsoft Bing maps key
+- ASP.NET machine Key
+
+**Third-party**
+- GitHub Personal Access Token
+- Amazon S3 Client Secret Access Key
+- Google API key
+- Slack access token
+
+**Generic / cross-platform**
+- General password
+- General Symmetric key
+- Client secret / API key
+- User login credentials
+- Http authorization header
+- SQL Server connection string
+- X.509 certificate private key
 
 ```yaml
 Type: String[]
