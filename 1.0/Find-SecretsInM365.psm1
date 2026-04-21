@@ -6,4 +6,4 @@
 . (Join-Path $PSScriptRoot "functions\Find-SecretsInM365.ps1")
 
 # Export public functions and aliases
-Export-ModuleMember -Function Find-SecretsInM365 -Alias FSiM365, Find-Secrets
+Export-ModuleMember -Function Find-SecretsInM365 -Alias FSiM365
